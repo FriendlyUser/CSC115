@@ -1,0 +1,6 @@
+air, duet, unjust
+air, unjust, duet
+duet, air, unjust
+duet, unjust, air
+unjust, air, duet
+unjust, duet, air

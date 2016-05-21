@@ -1,0 +1,10 @@
+jauntie, turdus
+jauntiest, urdu
+judaist, untrue
+jurat, unsuited
+juttied, uranus
+turdus, jauntie
+unsuited, jurat
+untrue, judaist
+uranus, juttied
+urdu, jauntiest
