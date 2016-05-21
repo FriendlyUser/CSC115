@@ -1,0 +1,24 @@
+BSTRefBased.java
+
+Test 1 & 2 were provided as part of the assignment
+Test 1: inserting 'humpty' -- passed
+
+        
+Test 2: inserting 'humpty', 'dumpty', 'sat' -- passed
+         
+
+Testing insertion                                               
+Test 3: inserting 'humpty', 'dumpty', 'sat', 'a', 'had', 'great', 'fall', 'on', 'wall' --passed
+
+Testing insertion and retrival of strings
+Test 4: inserting and retrival 'humpty', 'dumpty', 'sat', 'a', 'had'  --passed
+                                
+Testing insertion and retrival with more strings                                                              
+Test 5: inserting and retrival 'humpty', 'dumpty', 'sat', 'a', 'had', 'great', 'fall', 'on', 'wall' --passed
+
+Testing insertion and deletion of 'dumpty', 'great', 'sat'
+Test 6: inserting and deletion 'humpty', 'dumpty', 'sat', 'a', 'had', 'great', 'fall', 'on', 'wall' --
+ passed
+
+Testing insertion and deletion everything except 'humpty', 'a'
+Test 7: inserting and deletion 'humpty', 'dumpty', 'sat', 'a', 'had', 'great', 'fall', 'on', 'wall' --passed
