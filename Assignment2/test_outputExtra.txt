@@ -1,0 +1,497 @@
+Test 1.
+Test 1!; getLength() SUCCESS
+The list cannot be printed because it is empty.
+ECHO printList()
+
+Test 2.
+ECHO isEmpty()
+Test 2!; isEmpty() SUCCESS
+The list cannot be printed because it is empty.
+ECHO printList()
+
+Test 3.
+ECHO insert(Task(5 10))
+ECHO getLength()
+Test 3: insert() create list SUCCESS
+ECHO getLength()
+
+[5:10]
+ECHO printList()
+
+Test 4.
+
+ECHO insert(Task(1 1))
+ECHO insert(Task(2 2))
+ECHO insert(Task(3 3))
+ECHO getLength()
+Test 4: insert() multiple SUCCESS
+ECHO getLength()
+
+[3:03]
+[2:02]
+[1:01]
+ECHO printList()
+
+Test 5.
+ECHO insert(Task(2 1))
+ECHO insert(Task(4 3))
+ECHO insert(Task(7 7))
+ECHO retrieve(0)
+Test 5: retrieve() stationary SUCCESS
+The number of the retrieved Task is 7 and the is priority: 7
+ECHO getLength()
+
+[7:07]
+[4:03]
+[2:01]
+ECHO printList()
+
+Test 6.
+ECHO insert(Task(5 5))
+ECHO insert(Task(7 7))
+ECHO insert(Task(8 69))
+ECHO insert(Task(9 100))
+ECHO retrieve(1)
+Test 6: retrieve() moving. SUCCESS
+The number of the retrieved Task is 69 and the is priority: 8
+ECHO getLength()
+
+[9:100]
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+
+Test 7.
+ECHO insert(Task(5 5))
+ECHO insert(Task(7 7))
+ECHO insert(Task(8 69))
+ECHO insert(Task(9 100))
+ECHO getLength()
+
+[9:100]
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+ECHO getLength()
+ECHO getLength()
+ECHO removeHead() [9:100]
+ECHO getLength()
+
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+ECHO retrieve(0)
+Test 7: removeHead() SUCCESS!
+ECHO getLength()
+
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+
+Test 8.
+ECHO insert(Task(1 5))
+ECHO insert(Task(2 4))
+ECHO insert(Task(3 3))
+ECHO getLength()
+
+[3:03]
+[2:04]
+[1:05]
+ECHO printList()
+ECHO getLength()
+ECHO remove(Task(2 4))
+Test 8: remove() returns the removed task. SUCCESS
+ECHO getLength()
+
+[3:03]
+[1:05]
+ECHO printList()
+
+Test 9.
+ECHO insert(Task(4 19))
+ECHO insert(Task(5 20))
+ECHO insert(Task(6 79))
+ECHO insert(Task(7 43))
+ECHO insert(Task(8 53))
+ECHO insert(Task(9 93))
+ECHO getLength()
+
+[9:93]
+[8:53]
+[7:43]
+[6:79]
+[5:20]
+[4:19]
+ECHO printList()
+ECHO retrieve(3)
+ECHO getLength()
+ECHO remove(Task(6 79))
+ECHO getLength()
+
+[9:93]
+[8:53]
+[7:43]
+[5:20]
+[4:19]
+ECHO printList()
+Test 9: remove() Does it remove the right Node? SUCCESS
+
+Test 10.
+ECHO insert(Task(11 212))
+ECHO getLength()
+
+[11:212]
+ECHO printList()
+ECHO insert(Task(19 100))
+ECHO getLength()
+
+[19:100]
+[11:212]
+ECHO printList()
+ECHO insert(Task(11 198))
+ECHO getLength()
+
+[19:100]
+[11:212]
+[11:198]
+ECHO printList()
+ECHO insert(Task(7 104))
+ECHO getLength()
+
+[19:100]
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO getLength()
+ECHO getLength()
+ECHO removeHead() [19:100]
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(0)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(1)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(2)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+Test 10: (semi-full Test) SUCCESS
+Test 11.
+
+ECHO insertFromTail(Task(1 1))
+ECHO insertFromTail(Task(2 2))
+ECHO insertFromTail(Task(3 3))
+ECHO getLength()
+Test 11: insertFromTail() multiple SUCCESS
+ECHO getLength()
+
+[1:01]
+[2:02]
+[3:03]
+ECHO printListFromTail()
+
+Test 12.
+ECHO insertFromTail(Task(2 1))
+ECHO insertFromTail(Task(4 3))
+ECHO insertFromTail(Task(7 7))
+ECHO retrieveFromTail(2)
+Test 12: retrieve() stationary SUCCESS
+The number of the retrieved Task is 7 and the is priority: 7
+ECHO getLength()
+
+[2:01]
+[4:03]
+[7:07]
+ECHO printListFromTail()
+
+Test 13.
+ECHO insert(Task(5 5))
+ECHO insert(Task(7 7))
+ECHO insert(Task(8 69))
+ECHO insert(Task(9 100))
+ECHO retrieveFromTail(2)
+Test 13: retrieve() moving. SUCCESS
+The number of the retrieved Task is 69 and the is priority: 8
+ECHO getLength()
+
+[9:100]
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+
+Test 14.
+ECHO insertFromTail(Task(5 5))
+ECHO insertFromTail(Task(7 7))
+ECHO insertFromTail(Task(8 69))
+ECHO insertFromTail(Task(9 100))
+ECHO getLength()
+
+[5:05]
+[7:07]
+[8:69]
+[9:100]
+ECHO printListFromTail()
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [5:5]
+ECHO getLength()
+
+[7:07]
+[8:69]
+[9:100]
+ECHO printListFromTail()
+ECHO retrieveFromTail(0)
+Test 14: removeTail() SUCCESS!
+ECHO getLength()
+
+[7:07]
+[8:69]
+[9:100]
+ECHO printListFromTail()
+
+Test 15.
+ECHO insertFromTail(Task(1 5))
+ECHO insertFromTail(Task(2 4))
+ECHO insertFromTail(Task(3 3))
+ECHO getLength()
+
+[3:03]
+[2:04]
+[1:05]
+ECHO printList()
+ECHO getLength()
+ECHO removeFromTail(Task(2 4))
+Test 15: removeFromTail() returns the removed task. SUCCESS
+ECHO getLength()
+
+[1:05]
+[3:03]
+ECHO printListFromTail()
+
+Test 16.
+ECHO insertFromTail(Task(4 19))
+ECHO insertFromTail(Task(5 20))
+ECHO insertFromTail(Task(6 79))
+ECHO insertFromTail(Task(7 43))
+ECHO insertFromTail(Task(8 53))
+ECHO insertFromTail(Task(9 93))
+ECHO getLength()
+
+[4:19]
+[5:20]
+[6:79]
+[7:43]
+[8:53]
+[9:93]
+ECHO printListFromTail()
+ECHO retrieveFromTail(3)
+ECHO getLength()
+ECHO removeFromTail(Task(7 43))
+ECHO getLength()
+
+[4:19]
+[5:20]
+[6:79]
+[8:53]
+[9:93]
+ECHO printListFromTail()
+Test 16: remove() Does it remove the right Node? SUCCESS
+
+Test 17.
+ECHO insertFromTail(Task(11 212))
+ECHO getLength()
+
+[11:212]
+ECHO printListFromTail()
+ECHO insertFromTail(Task(19 100))
+ECHO getLength()
+
+[11:212]
+[19:100]
+ECHO printListFromTail()
+ECHO insertFromTail(Task(11 198))
+ECHO getLength()
+
+[11:198]
+[11:212]
+[19:100]
+ECHO printListFromTail()
+ECHO insertFromTail(Task(7 104))
+ECHO getLength()
+
+[7:104]
+[11:198]
+[11:212]
+[19:100]
+ECHO printListFromTail()
+ECHO getLength()
+ECHO getLength()
+ECHO removeHead() [19:100]
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(0)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(1)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(2)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+Test 17: (semi-full Test) SUCCESS
+
+Test 18.
+ECHO insertFromTail(Task(11 212))
+ECHO insertFromTail(Task(100 101))
+ECHO insertFromTail(Task(19 100))
+ECHO insertFromTail(Task(11 198))
+ECHO insertFromTail(Task(10 104))
+ECHO insert(Task(23 69))
+ECHO insert(Task(10 29))
+ECHO getLength()
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [10:29]
+ECHO remove(Task(10 29))
+ECHO insert(Task(4 19))
+ECHO insertFromTail(Task(5 20))
+ECHO insert(Task(6 79))
+ECHO insertFromTail(Task(7 43))
+ECHO insert(Task(8 53))
+ECHO insertFromTail(Task(9 93))
+ECHO getLength()
+
+[4:19]
+[5:20]
+[6:79]
+[7:43]
+[8:53]
+[9:93]
+[10:104]
+[11:198]
+[11:212]
+[19:100]
+[23:69]
+[100:101]
+ECHO printListFromTail()
+ECHO getLength()
+
+[100:101]
+[23:69]
+[19:100]
+[11:212]
+[11:198]
+[10:104]
+[9:93]
+[8:53]
+[7:43]
+[6:79]
+[5:20]
+[4:19]
+ECHO printList()
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [4:19]
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [5:20]
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [6:79]
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [7:43]
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [8:53]
+ECHO getLength()
+ECHO getLength()
+ECHO removeHead() [100:101]
+ECHO insert(Task(25 88))
+ECHO getLength()
+ECHO getLength()
+ECHO removeHead() [25:88]
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [9:93]
+ECHO getLength()
+
+[10:104]
+[11:198]
+[11:212]
+[19:100]
+[23:69]
+ECHO printListFromTail()
+ECHO getLength()
+ECHO getLength()
+ECHO removeHead() [23:69]
+ECHO getLength()
+ECHO getLength()
+ECHO removeTail() [10:104]
+ECHO getLength()
+
+[19:100]
+[11:212]
+[11:198]
+ECHO printList()
+ECHO retrieve(0)
+ECHO getLength()
+
+[19:100]
+[11:212]
+[11:198]
+ECHO printList()
+ECHO retrieve(1)
+ECHO getLength()
+
+[19:100]
+[11:212]
+[11:198]
+ECHO printList()
+ECHO retrieve(2)
+ECHO getLength()
+
+[19:100]
+[11:212]
+[11:198]
+ECHO printList()
+Test 18: (Big Test) SUCCESS

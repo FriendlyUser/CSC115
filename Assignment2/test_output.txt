@@ -1,0 +1,201 @@
+Test 1. Check if the length of the list is 0
+Test 1!; getLength() SUCCESS
+The list cannot be printed because it is empty.
+ECHO printList()
+
+Test 2. Check if the list is empty
+ECHO isEmpty()
+Test 2!; isEmpty() SUCCESS
+The list cannot be printed because it is empty.
+ECHO printList()
+
+Test 3. check if a new list can be create a list.
+The length of the list should now be 1
+ECHO insert(Task(5 10))
+ECHO getLength()
+Test 3: insert() create list SUCCESS
+ECHO getLength()
+
+[5:10]
+ECHO printList()
+
+Test 4.Add multiple items to the  list
+the length of the list should be 3
+ECHO insert(Task(1 1))
+ECHO insert(Task(2 2))
+ECHO insert(Task(3 3))
+ECHO getLength()
+Test 4: insert() multiple SUCCESS
+ECHO getLength()
+
+[3:03]
+[2:02]
+[1:01]
+ECHO printList()
+
+Test 5.check if the retrieve function returns the proper Task
+the task should be [7,7]
+ECHO insert(Task(2 1))
+ECHO insert(Task(4 3))
+ECHO insert(Task(7 7))
+ECHO retrieve(0)
+Test 5: retrieve() stationary SUCCESS
+The number of the retrieved Task is 7 and the is priority: 7
+ECHO getLength()
+
+[7:07]
+[4:03]
+[2:01]
+ECHO printList()
+
+Test 6. check if the retrieve() returns the proper Task if the list must be tranversed
+ECHO insert(Task(5 5))
+ECHO insert(Task(7 7))
+ECHO insert(Task(8 69))
+ECHO insert(Task(9 100))
+ECHO retrieve(1)
+Test 6: retrieve() moving. SUCCESS
+The number of the retrieved Task is 69 and the is priority: 8
+ECHO getLength()
+
+[9:100]
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+
+Test 7. check if the removeHead() will assign the second node as the new head
+ECHO insert(Task(5 5))
+ECHO insert(Task(7 7))
+ECHO insert(Task(8 69))
+ECHO insert(Task(9 100))
+ECHO getLength()
+
+[9:100]
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+ECHO getLength()
+ECHO removeHead() [9:100]
+ECHO getLength()
+
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+ECHO retrieve(0)
+Test 7: removeHead() SUCCESS!
+ECHO getLength()
+
+[8:69]
+[7:07]
+[5:05]
+ECHO printList()
+
+Test 8. check if the remove() returns the proper Task
+ECHO insert(Task(1 5))
+ECHO insert(Task(2 4))
+ECHO insert(Task(3 3))
+ECHO getLength()
+
+[3:03]
+[2:04]
+[1:05]
+ECHO printList()
+ECHO getLength()
+ECHO remove(Task(2 4))
+Test 8: remove() returns the removed task. SUCCESS
+ECHO getLength()
+
+[3:03]
+[1:05]
+ECHO printList()
+
+Test 9. Check if a removed item is actually removed
+ECHO insert(Task(4 19))
+ECHO insert(Task(5 20))
+ECHO insert(Task(6 79))
+ECHO insert(Task(7 43))
+ECHO insert(Task(8 53))
+ECHO insert(Task(9 93))
+ECHO getLength()
+
+[9:93]
+[8:53]
+[7:43]
+[6:79]
+[5:20]
+[4:19]
+ECHO printList()
+ECHO retrieve(3)
+ECHO getLength()
+ECHO remove(Task(6 79))
+ECHO getLength()
+
+[9:93]
+[8:53]
+[7:43]
+[5:20]
+[4:19]
+ECHO printList()
+Test 9: remove() Does it remove the right Node? SUCCESS
+
+Test 10. based off example in the assignment description test. Calls many methods in rapid succession.
+The expected values for the task numbers are 212,198,104 respectively.
+ECHO insert(Task(11 212))
+ECHO getLength()
+
+[11:212]
+ECHO printList()
+ECHO insert(Task(19 100))
+ECHO getLength()
+
+[19:100]
+[11:212]
+ECHO printList()
+ECHO insert(Task(11 198))
+ECHO getLength()
+
+[19:100]
+[11:212]
+[11:198]
+ECHO printList()
+ECHO insert(Task(7 104))
+ECHO getLength()
+
+[19:100]
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO getLength()
+ECHO removeHead() [19:100]
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(0)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(1)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+ECHO retrieve(2)
+ECHO getLength()
+
+[11:212]
+[11:198]
+[7:104]
+ECHO printList()
+Test 10: (semi-full Test) SUCCESS
