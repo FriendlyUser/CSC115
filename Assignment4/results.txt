@@ -1,0 +1,21 @@
+12
+14
+10
+24
+6
+144
+2
+109
+-437
+29
+-1200
+12345
+19171
+<syntax error>
+<syntax error>
+<unbalanced ()>
+<unbalanced ()>
+<noninteger>
+<noninteger>
+8
+<unbalanced ()>
