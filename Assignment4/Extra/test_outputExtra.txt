@@ -1,0 +1,106 @@
+StringStackRefBasedExtra.java
+
+Test behavior of isEmpty() for a empty list
+
+Test 1 (isEmpty): passed
+
+Test behavior of isEmpty after one insertion.
+isEmpty should return false
+Test 2 (isEmpty): passed
+
+/Test pushing 1 item and then peek
+Test 3 (push then peek): passed
+
+Test if exception is thrown when peek() is called with an empty stack 
+Test 4 (peek): passed
+
+Test if the stack  is Empty after one insert and pop
+Test 5 (push then pop): passed
+
+Test if exception is thrown when pop() is called with an empty stack
+Test 6 (pop): passed
+
+Test if the stack is Empty after 3 items added and popAll is called
+Test 7 (push then popAll): passed
+
+Test if the stack is Empty after 3 items added, 1 item popped, and popAll
+Test 8 (push, pop, popAll): passed
+
+Test if the items that are inserted in the proper order
+Test 9 (multiple inserts): passed
+
+Test behaviour of multiple pushes followed by a pop and peek
+Test 10 (semi-full test): passed
+
+InfixCalcExtra.java
+Tests 1-4 determine there are balanced parentheses
+Tests 5-9 make sure only numbers can be operands
+Tests 10-14 ensure that +/*^- are recognized are operators
+Tests 15-17 infix expressions are converted to postfix expressions
+Tests 18-19 check error cases i.e. are exceptions thrown
+Tests 21-23 evaluate expressions numerically
+Tests 24-25 test the functionally of the modulus operator
+
+Test 1 (isBalanced): passed
+Test 2 (isBalanced): passed
+Test 3 (isBalanced): passed
+Test 4 (isBalanced): passed
+Test 5 (isOperand): passed
+Test 6 (isOperand): passed
+Test 7 (isOperand): passed
+Test 8 (isOperand): passed
+Test 9 (isOperator): passed
+Test 10 (isOperator): passed
+Test 11 (isOperator): passed
+Test 12 (isOperator): passed
+Test 13 (isOperator): passed
+Test 14 (isOperator): passed
+
+Test 15 (toPostFix): passed
+Test 16 (toPostFix): passed
+Test 17 (toPostFix): passed
+Test 18 (evaluateExpression): passed
+Test 19 (evaluateExpression): passed
+Test 20 (evaluateExpression): passed
+
+infix = "(10*20+200)/4/5";
+10 * 20 = 200
+200 + 200 = 400
+400 / 4 = 100
+100 / 5 = 20
+Test 21 (evaluateExpression): passed
+
+infix = "1*8/4+2";
+1 * 8 = 8
+8 / 4 = 2
+2 + 2 = 4
+Test 22 (evaluateExpression): passed
+
+infix = "3^2^3-3^1^1";
+2 ^ 3 = 8
+3 ^ 8 = 6561
+1 ^ 1 = 1
+3 ^ 1 = 3
+6561 - 3 = 6558
+Test 23 (evaluateExpression): passed
+
+
+2 + 2 = 4
+Test 22 (evaluateExpression): passed
+2 ^ 3 = 8
+3 ^ 8 = 6561
+1 ^ 1 = 1
+3 ^ 1 = 3
+6561 - 3 = 6558
+Test 23 (evaluateExpression): passed
+
+10 % 3 = 1
+Test 24 (evaluateExpression): passed
+
+10 % 3 = 1
+7 % 3 = 1
+1 + 1 = 2
+5 % 3 = 2
+3 ^ 2 = 9
+2 + 9 = 11
+Test 25 (evaluateExpression): passed
