@@ -11,10 +11,10 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
-		//initialization
+	//initialization
         public String str ="";
         Character op = 'q';
-        int i,num,numtemp;
+        float num,numtemp;
         EditText showResult;
         @Override
         public void onCreate(Bundle savedInstanceState) {
@@ -71,15 +71,15 @@ public class MainActivity extends AppCompatActivity {
             op = '*';
             insertOp(op);
         }
-		//calculate result
+	//calculate result
         public void btnequalClicked(View v){
             calculate();
             perform();
         }
         public void btnclearClicked(View v){
             reset();
-        }\
-		//reset values
+        }
+	//reset values
         private void reset() {
             str ="";
             op ='q';
@@ -87,15 +87,14 @@ public class MainActivity extends AppCompatActivity {
             numtemp = 0;
             showResult.setText("");
         }
-		//insert the number as a string and keep track of its value
+	//insert the number as a string and keep track of its value
         private void insert(int j) {
-            str = str+Integer.toString(j);
-            num = Integer.valueOf(str).intValue();
-           // showResult.setText(str);
-
-            showResult.setText(str);
+            String app = Integer.toString(j);
+            str = str+app;
+            num = Integer.valueOf(str).floatValue();
+            showResult.append(app);
         }
-		//insert operation 
+	//insert operation 
         private void insertOp(char op) {
             String string1 = Character.toString(op);
             showResult.append("" + string1);
@@ -104,9 +103,8 @@ public class MainActivity extends AppCompatActivity {
             str = "";
             numtemp = num;
         }
-		//calculate values based on the operator and display result
+	//calculate values based on the operator and display result
         private void calculate() {
-            // TODO Auto-generated method stub
             if(op == '+')
                 num = numtemp+num;
             else if(op == '-')
@@ -117,5 +115,4 @@ public class MainActivity extends AppCompatActivity {
                 num = numtemp*num;
             showResult.setText(""+num);
         }
-
     }
