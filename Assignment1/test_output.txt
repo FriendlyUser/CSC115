@@ -1,0 +1,31 @@
+The tests are checking the best place to align the second string with the first string. Then, the program will print the index corresponding the to the best alignment and the number of mismatched characters. If none of the characters in the strings match, the program will print out nomatch.
+
+The first test input was java SeqAlignment --file tests/in01.txt. Expected output: 150 
+								           output: 150
+
+The second test input was java SeqAlignment --file tests/in02.txt. Expected output: 130 
+								            output: 130
+
+The third test input was java SeqAlignment --file tests/in03.txt . Expected output: 121 
+								            output: 121
+
+The fourth test input was java SeqAlignment --file tests/in04.txt . Expected output: 21 
+								             output: 21
+
+The fifth test input was java SeqAlignment --file tests/in05.txt . Expected output: 230 
+								            output: 230
+
+The sixth test input was java SeqAlignment --file tests/in06.txt. Expected output: 32 
+								           output: 32
+
+The seventh test input was java SeqAlignment --file tests/in07.txt. Expected output: 270 
+								             output: 270
+
+The eighth test input was java SeqAlignment --file tests/in08.txt. Expected output: 272 
+								            output: 272
+
+The ninth test input was java SeqAlignment --file tests/in09.txt. Expected output: nomatch7
+								           output: nomatch7
+
+The tenth test input was java SeqAlignment --file tests/in10.txt. Expected output: 731
+								           output: 731
